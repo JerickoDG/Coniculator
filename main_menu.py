@@ -549,7 +549,7 @@ class IdentifierWindow(QWidget):
         self.list_of_textbox = []
         
 
-        names = ('', 'x² +', '', 'xy+','','y²+','','x+','','y','','=','0')
+        names = ('', 'x² +', '', 'xy +','','y² +','','x +','','y +','','=','0')
         # using a loop to generate positions
         for name in names:
             if name == '':
@@ -562,7 +562,7 @@ class IdentifierWindow(QWidget):
                 self.hbox.addWidget(character)
         
         calculate_button = QPushButton("Identify!", self)
-        calculate_button.move(100, 80)
+        calculate_button.move(110, 80)
         calculate_button.clicked.connect(self.identifierMethod)
 
     def identifierMethod(self):
